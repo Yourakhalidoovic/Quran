@@ -1,0 +1,36 @@
+.grid{
+ display: grid;
+ gap: 8px;
+ grid-template-columns: repeat(4, 300px);
+
+}
+.grid .grid-item {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+#item1{
+grid-column: 1 /3;
+ background-color: violet;
+}
+#item3{
+    grid-row: 1 / 3;
+    grid-column: 4;
+    background-color: grey;
+
+ }
+#item5{
+    grid-column:2/4 ;
+    background-color: yellow;
+    border: 10px;
+    box-shadow: 10px;
+}
+#item4{
+    background-color: blue;
+}
+.name{
+    display: flex;
+    flex: 10px;
+    font-style: normal;
+}
