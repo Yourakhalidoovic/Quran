@@ -1,0 +1,71 @@
+.body{
+	margin:0;
+
+}.main-container{
+	border: 1px black solid;
+	height:100vh ;
+	display:flex ;
+	flex-direction:column ;
+	justify-content: center;
+	align-items: center;
+}
+.button-container{
+	display: flex;
+	flex-direction: row;
+}
+.btn{
+	margin: 0 10px ;
+	border-radius: 999px;
+	padding: 7px 15px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	transition:  0.3 s all ease ;
+	position: relative;
+	animation: btn-animation 3s infinite alternate;
+
+
+
+}
+.btn-reset{
+	background-color:orange ;
+	transition: 0.4s all ease ;
+}
+.btn-submit{
+	background-color: red;
+	transition: 0.4s all ease ;
+}
+.btn-submit:hover{
+	background-color: blue;
+	transform: scale(1.1);
+
+
+}
+.btn-reset:hover{
+	background-color: black;
+	transform: scale(1.1);
+}
+@keyframes btn-animation {
+	25% {
+		top:50px;
+		transform:rotate(0);
+	}
+	50% {
+		top:50px;
+		transform: rotate(360deg);
+	}
+	75% {
+		top:50px;
+		transform: rotate(360deg);
+	}
+	100% {
+		top:50px;
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 450px) {
+	.divbutton{
+		flex-direction: column;
+	}
+}
